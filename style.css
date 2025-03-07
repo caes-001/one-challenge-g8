@@ -1,0 +1,193 @@
+:root {
+    --color-primary: #8c9fff;
+    --color-secondary: #f3e3ff;
+    --color-tertiary: rgb(255, 159, 79);
+    --color-button: rgb(255, 159, 79);
+    --color-button-hover: #957dec;
+    --color-text: #8c9fff;
+    --color-white: white;
+    --color-grey: #063f7f;
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* Banner */
+.header-banner {
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 0 0;
+}
+
+/* Sección de entrada */
+.input-section {
+    flex: 60%;
+    background-color: var(--color-secondary);
+    border: 2px solid rgba(214, 196, 255, 0.33);
+    border-radius: 50px 30px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    width: 100%;
+}
+
+/* Títulos */
+.main-title {
+    padding: 50px;
+    font-size: 60px;
+    font-family: "Inter", serif;
+    font-weight: 800;
+    font-style: bold;
+    color: var(--color-grey);
+}
+
+.section-title {
+    font-family: "Inter", serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Contenedores de entrada y botón */
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.input-name {
+    width: 100%;
+    padding: 10px;
+    border: 3px solid rgb(255, 159, 79);
+    border-radius: 25px 0 0 25px;
+    font-size: 18px;
+}
+
+.button-container {
+    width: 300px;
+    justify-content: center;
+}
+
+/* Estilos de entrada de texto */
+.input-title {
+    flex: 1;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid rgba(255, 159, 79);
+    border-right: none;
+    border-radius: 25px 0 0 25px;
+    font-family: "Merriweather", serif;
+    box-shadow: 2px 4px 8px rgb(86, 86, 86);
+}
+
+/* Estilos de botón */
+button {
+    padding: 15px 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 25px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.button-add {
+    background-color: var(--color-tertiary);
+    color: white;
+    border-radius: 0 75px 75px 0;
+}
+
+.button-add:hover {
+    background-color: #957dec;
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    color: var(--color-text);
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    margin: 21px 0;
+}
+
+.result-list {
+    margin-top: 2px;
+    color: #44f907;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Botón de sortear título */
+.button-draw {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 7px 40px;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    font-size: 20px;
+}
+
+.button-draw img {
+    margin-right: 40px;
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
+}
+
+.btn-eliminar {
+    margin-left: 13px; 
+    padding: 2px 17px; 
+    font-size: 0.8em; 
+    background-color: #957dec; 
+    color: white; 
+    border: none;
+    cursor: pointer; 
+}
+
+.btn-eliminar:hover {
+    background-color: #d32f2f; 
+}
+
+#reinicio{              /* al ser una id se utiliza # en css*/
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 29px;
+    padding: 12px 10px;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    font-size: 25px;
+}
+
+#reinicio:hover{
+    background-color: red;
+    color:white;
+}
